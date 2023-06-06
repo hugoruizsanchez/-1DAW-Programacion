@@ -1,0 +1,10 @@
+
+CÓMO INSTALAR JAVA EN EL EQUIPO:
+https://www.youtube.com/watch?v=mgtYFcsCF5k
+
+Desde el CMD -> "echo %PATH%" para saber qué variables pueden ejecutarse.  
+EJECUTAR PROGRAMAS JAVA
+
+Utilizar "cd" para seleccionar el directorio - en el caso del USB, el D:  -. 
+
+Utilizar el prefijo "java" sobre el archivo a ejecutar.
