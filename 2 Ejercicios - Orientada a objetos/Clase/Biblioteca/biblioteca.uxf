@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>20</y>
+      <w>350</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>Biblio::Biblioteca
+--
++arrayLibros[] = new Libro[10]: Libro
++arrayPeriodicos[] = new Periodico[10]: Periodico
++acotadorperiodico = 9: int
++acotadorlibro = 9: int
+--
++Biblioteca(): ctor
++inicializarBiblioteca(): void
++agregarPeriodico(int i): boolean
++mostrarPeriodico(): void
++agregarLibro(int i): boolean
++mostrarLibro(): void
++listarLibros(int k): void
++listarPeriodicos(int k): void
++eliminarLibro(): void
++eliminarPeriodico(): void
++libroLibre(): int
++periodicoLibre(): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>20</y>
+      <w>750</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>Biblio::Libro
+--
++tipoPortada: String
++isbn: String
++nombreAutor: String
++editorial: String
+--
++Libro(int numeroDePaginas, float precio, String tipoPortada, String isbn, String nombreAutor, String editorial): ctor
++getTipoPortada(): String
++setTipoPortada(String tipoPortada): void
++getIsbn(): String
++setIsbn(String isbn): void
++getNombreAutor(): String
++setNombreAutor(String nombreAutor): void
++getEditorial(): String
++setEditorial(String editorial): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1130</x>
+      <y>20</y>
+      <w>270</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Biblio::Menu
+--
+-titulo: String
+-opciones: String[]
+--
++Menu(String[] opciones): ctor
++getTitulo(): String
++setTitulo(String titulo): void
++getOpciones(): String[]
++setOpciones(String[] opciones): void
++mostrarMenu(): void
++eligeOpcion(): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>350</y>
+      <w>370</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Biblio::Publicacion
+--
++numeroDePaginas: int
++precio: float
++existe: boolean
+--
++Publicacion(int numeroDePaginas, float precio): ctor
++getNumeroDePaginas(): int
++setNumeroDePaginas(int numeroDePaginas): void
++getPrecio(): float
++setPrecio(float precio): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>350</y>
+      <w>540</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Biblio::Periodico
+--
+-nombre: String
+-fecha: String
+--
++Periodico(int numeroDePaginas, float precio, String nombre, String fecha): ctor
++getNombre(): String
++setNombre(String nombre): void
++getFecha(): String
++setFecha(String fecha): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>940</x>
+      <y>350</y>
+      <w>200</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Biblio::Principal
+--
+--
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
