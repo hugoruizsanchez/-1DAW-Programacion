@@ -1,0 +1,13 @@
+package ventana;
+
+public class Principal {
+
+	public static void main(String[] args) {
+	
+		Ventana v1 = new Ventana (12, 30, "Esto es un programa de ejemplo que es muy divertido.");		
+	
+		v1.mostrar();
+
+	}
+
+}
