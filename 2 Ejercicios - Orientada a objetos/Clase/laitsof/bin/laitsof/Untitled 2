@@ -1,0 +1,43 @@
+
+TERCERA POSIBILIDAD 
+
+Si (i) está en el intervalo de (i<casillas.lenght-1  && i>1) Y (j==casillas.lenght-1) 
+-> Ejecutar las operaciones: 
+Modificar: 
+
+           (PROPIA) [i] [j]
+	   (ARRIBA) [i-1] [j] 
+           (ABAJO)  [i+1] [j]
+           (IZQUIERDA) [i] [j-1]
+
+CUARTA POSIBILIDAD 
+
+Si (i==0) y (j==0) 
+-> Ejecutar las operaciones: 
+Modificar: 
+           (DERECHA) [i] [j+1]
+           (ABAJO)  [i+1] [j]
+
+//////
+
+Si (i==0) y (j == casillas.length-1) 
+-> Ejecutar las operaciones: 
+Modificar:
+	   (ABAJO)  [i+1] [j]
+           (IZQUIERDA) [i] [j-1]
+
+Si (i==casillas.length-1) y (j== 0)
+
+-> Ejecutar las operaciones: 
+Modificar:
+
+	   (ARRIBA) [i-1] [j] 
+           (DERECHA) [i] [j+1]
+
+Si  (i==casillas.length-1) y (j= casillas.length-1)
+
+-> Ejecutar las operaciones: 
+Modificar:
+
+           (IZQUIERDA) [i] [j-1]
+	   (ARRIBA) [i-1] [j] 
